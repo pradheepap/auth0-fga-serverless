@@ -1,0 +1,11 @@
+service: auth0-fga-serverless
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  profile: personal
+
+functions:
+  verify:
+    handler: index.handler
